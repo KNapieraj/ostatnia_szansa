@@ -12,9 +12,6 @@ jobs:
        
        - name: install python3
          run: sudo apt-get install python3
-       
-       - name: install falsk
-         run: pip install Flask
 
       #  - name: install pylint
       #    run: sudo apt-get install pylint
