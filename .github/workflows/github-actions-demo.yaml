@@ -22,7 +22,7 @@ jobs:
       #    run: pylint app.py
 
        - name: install pytest
-         run: sudo apt-get install pytest
+         run: sudo apt-get install python-pytest
        - name: test app by PyTest
          run: pytest app.py
 
