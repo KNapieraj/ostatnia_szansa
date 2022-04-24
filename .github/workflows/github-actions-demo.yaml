@@ -1,0 +1,42 @@
+name: My Github Workflow
+
+on: [push]
+
+jobs:
+  Test-app:
+
+    runs-on: ubuntu-latest
+
+    steps:
+       - uses: actions/checkout@v2
+       
+       - name: install python3
+         run: sudo apt-get install python3
+       
+       - name: install falsk
+         run: pip install Flask
+
+       - name: install pylint
+         run: sudo apt-get install pylint
+       - name: test app by PyLint
+         run: pylint app.py
+         
+       - name: install pytest
+         run: sudo apt-get install pytest
+       - name: test app by PyTest
+         run: pytest app.py
+
+  # Build and run:
+
+  #   runs-on: ubuntu-latest
+
+  #   steps:
+  #      - uses: actions/checkout@v2
+  #      - name: install pylint
+  #        run: sudo apt-get install pylint
+  #      - name: install python3
+  #        run: sudo apt-get install python3
+  #      - name: install falsk
+  #        run: pip install Flask
+  #      - name: test app by PyLint
+  #        run: pylint app.py
