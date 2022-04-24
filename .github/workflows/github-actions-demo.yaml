@@ -16,11 +16,11 @@ jobs:
        - name: install falsk
          run: pip install Flask
 
-       - name: install pylint
-         run: sudo apt-get install pylint
-       - name: test app by PyLint
-         run: pylint app.py
-         
+      #  - name: install pylint
+      #    run: sudo apt-get install pylint
+      #  - name: test app by PyLint
+      #    run: pylint app.py
+
        - name: install pytest
          run: sudo apt-get install pytest
        - name: test app by PyTest
