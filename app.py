@@ -8,8 +8,8 @@ APP = Flask(__name__)
 
 def index():
     """Funkcja"""
-    return '<h1>Hello WSB! Greetings from Flask & Docker!</h1>'
+    return '''<h1><center>Witam na mojej stronie</center></h1>\n
+            <h2><center>Kamil Napieraj<center></h2>'''
 
 if __name__ == "__main__":
     APP.run(debug=True)
-    
